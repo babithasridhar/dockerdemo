@@ -1,6 +1,6 @@
 FROM centos:latest
 RUN yum update && yum upgrade
-RUN yum install java-1.8.0-openjdk wget
+RUN yum install java-1.8.0-openjdk-devel wget
 RUN mkdir /usr/local/tomcat
 RUN wget http://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.47/bin/apache-tomcat-8.5.47.tar.gz -O /tmp/tomcat.tar.gz
 RUN cd /tmp && tar xvfz tomcat.tar.gz
