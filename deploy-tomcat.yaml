@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: tomcat-cd
-        image: babithasridhar/deploy_kube:latest
+        image: babithasridhar/java-web-app-cicd:latest
         ports:
         - containerPort: 8080
         imagePullPolicy: Always
