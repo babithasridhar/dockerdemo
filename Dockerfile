@@ -1,6 +1,6 @@
 FROM centos:latest
 RUN yum update && yum upgrade
-RUN yum install openjdk-8-jdk wget
+RUN yum install openjdk-7-jdk wget
 RUN mkdir /usr/local/tomcat
 RUN wget http://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.47/bin/apache-tomcat-8.5.47.tar.gz -O /tmp/tomcat.tar.gz
 RUN cd /tmp && tar xvfz tomcat.tar.gz
