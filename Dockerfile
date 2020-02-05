@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM centos:latest
 RUN yum update && yum upgrade
 RUN yum install openjdk-8-jdk wget
 RUN mkdir /usr/local/tomcat
